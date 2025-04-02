@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment-1</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="product-page">
+      <div class="product">
+        <div class="product-image">
+          <img src="" alt="Product Image" id="currentImage" />
+          <button id="prev-button" class="navigation prev-button">
+            &larr;
+          </button>
+          <button id="next-button" class="navigation next-button">
+            &rarr;
+          </button>
+        </div>
+        <div class="thumbnails"></div>
+      </div>
+
+      <div class="product-info">
+        <h1 id="Name">Product Name</h1>
+        <p id="price">$0.99</p>
+        <p id="description">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse fuga
+          perspiciatis cumque omnis quaerat obcaecati beatae necessitatibus
+          veritatis sed hic!
+        </p>
+        <div class="variant">
+          <label for="color">Size</label>
+          <select name="size" id="size">
+            <option value="size">S</option>
+            <option value="size">L</option>
+            <option value="size" selected>M</option>
+            <option value="size">XL</option>
+            <option value="size">XXL</option>
+            <option value="size">XXS</option>
+            <option value="size">S</option>
+          </select>
+          <!-- can add a color element here which will be a radio button  -->
+        </div>
+        <div class="quantity-selector">
+          <label for="quantity">Quantity: </label>
+          <input type="number" id="quantity" value="1" min="1" max="10" />
+        </div>
+        <button id="addToCart">Add To Cart</button>
+        <p id="addmsg">Item added to cart!</p>
+      </div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
