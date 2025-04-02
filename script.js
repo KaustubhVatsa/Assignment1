@@ -3,7 +3,7 @@ let images = [];
 //to store the big picture index
 let currentIdx = 0;
 
-const currImg = document.getElementById("currentImage"); //puts in the entire currentImage element into the currImg
+const currImg = document.getElementById("currentImage"); 
 const thumbnailscont = document.querySelector(".thumbnails");
 const prev_btn = document.getElementById("prev-button");
 const next_btn = document.getElementById("next-button");
